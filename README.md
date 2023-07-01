@@ -43,3 +43,11 @@ Developers:
 * React - for the frontend framework used in this project.
 * JavaScript - for the programming language used.
 * Ahmed Ballal - as the creator of this app.
+
+
+
+
+https://github.com/aballal-source/AI-Thumbnail-Generator/assets/71238322/c7282fb5-16db-4046-9b3d-2e7c24582da6
+
+
+
