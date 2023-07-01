@@ -10,7 +10,7 @@ const CodebenderIntro = () => {
 
   useEffect(() => {
     renderResponse();
-  }, [resultText, resultImageUrl]);
+  }, [renderResponse()], [resultText, resultImageUrl]);
 
   const getData = async (input = prompt) => {
     try {
