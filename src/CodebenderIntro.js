@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const CodebenderIntro = () => {
   const [error, setError] = useState("");
@@ -7,7 +7,7 @@ const CodebenderIntro = () => {
 
   const [resultText, setResultText] = useState("");
   const [resultImageUrl, setResultImageUrl] = useState("");
-
+  
   const getData = async (input = prompt) => {
     try {
       const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/openai?prompt=${input}`);
@@ -61,9 +61,5 @@ const CodebenderIntro = () => {
     </>
   );
 }
-
-  useEffect(() => {
-    renderResponse();
-  }, [renderResponse, resultText, resultImageUrl]);
 
 export default CodebenderIntro;
