@@ -15,7 +15,8 @@
   "scripts": {
     "start:backend": "nodemon index.mjs",
     "start:frontend": "react-scripts start",
-    "start": "concurrently -k \"yarn start:backend\" \"yarn start:frontend\"",
+    "start:without-netlify": "concurrently -k \"npm run start:backend\" \"npm run start:frontend\"",
+    "start": "netlify dev",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
