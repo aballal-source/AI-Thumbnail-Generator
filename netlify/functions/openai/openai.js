@@ -53,8 +53,14 @@ exports.handler = async (event, context) => {
       text: textResponse.data.choices[0].message.content,
       imageUrl: imageUrl,
     };
-  
-    res.json(response);
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify(response),
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    };
 
   } catch (error) {
     console.error(error);
