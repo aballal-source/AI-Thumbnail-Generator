@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const CodebenderIntro = () => {
   const [error, setError] = useState("");
@@ -7,10 +7,6 @@ const CodebenderIntro = () => {
 
   const [resultText, setResultText] = useState("");
   const [resultImageUrl, setResultImageUrl] = useState("");
-
-  useEffect(() => {
-    renderResponse();
-  }, [resultText, resultImageUrl]);
 
   const getData = async (input = prompt) => {
     try {
@@ -24,6 +20,7 @@ const CodebenderIntro = () => {
       setLoading(false);
       setError("");
     } catch (e) {
+      console.log(resultText);
       setError("Oops")
     }
   };
