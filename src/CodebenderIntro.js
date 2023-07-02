@@ -5,7 +5,7 @@ const CodebenderIntro = () => {
   const [loading, setLoading] = useState(false);
   const [prompt, setPrompt] = useState("");
 
-  const [_resultText, setResultText] = useState("");
+  const [resultText, setResultText] = useState("");
   const [resultImageUrl, setResultImageUrl] = useState("");
   
   const getData = async (input = prompt) => {
