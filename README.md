@@ -49,6 +49,7 @@ Examples: This app is ideal for faceless content creators. In this example "I'm 
 
 
 Another example -using a video title already on YouTube and comparing the result to the thumbnail generator:
+
 https://github.com/aballal-source/AI-Thumbnail-Generator/assets/71238322/c7282fb5-16db-4046-9b3d-2e7c24582da6
 
 
